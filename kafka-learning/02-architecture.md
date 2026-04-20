@@ -45,14 +45,14 @@ Consumers read data from partitions. To scale consumption, you use a **Consumer 
 
 ```mermaid
 graph TD
-    subgraph Topic (4 Partitions)
+    subgraph Topic - 4 Partitions
         P0(Partition 0)
         P1(Partition 1)
         P2(Partition 2)
         P3(Partition 3)
     end
 
-    subgraph Consumer Group A (2 Consumers)
+    subgraph Consumer Group A - 2 Consumers
         C1(Consumer 1)
         C2(Consumer 2)
     end
@@ -87,13 +87,13 @@ Kafka is designed to be fault-tolerant. It achieves this by replicating partitio
 
 ```mermaid
 graph LR
-    subgraph Broker 1 (Leader for Partition 0)
+    subgraph Broker 1 - Leader for Partition 0
         L0(P0 Leader)
     end
-    subgraph Broker 2 (Follower)
+    subgraph Broker 2 - Follower
         F0_B2(P0 Follower)
     end
-    subgraph Broker 3 (Follower)
+    subgraph Broker 3 - Follower
         F0_B3(P0 Follower)
     end
 
